@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .b-main {
   height: 100vh;
   width: 100vw;
@@ -34,7 +34,7 @@ export default {
   background-image: radial-gradient(
     circle at center,
     rgba(101, 117, 135, 0.9) 0%,
-    rgba(79, 92, 106, 0) 100%
+    rgba(101, 117, 135, 0) 100%
   );
 }
 
@@ -68,7 +68,7 @@ export default {
 .b-main > img {
   position: absolute;
   right: 100px;
-  bottom: 50px;
+  top: 150px;
 }
 
 @media (max-width: 1150px) {
@@ -94,13 +94,55 @@ export default {
 }
 
 @media (max-width: 768px) {
+  .b-main {
+    background-image: radial-gradient(
+      circle at center,
+      rgba(101, 117, 135, 0.9) 0%,
+      rgba(101, 117, 135, 0) 80%
+    );
+  }
+
   .b-main > img {
     transform: translate(50%, 250px);
+    transition: none;
     right: 50%;
+    margin-bottom: 20px;
   }
 
   .b-main > img:hover {
-    transform: translate(50%, 20px);
+    transform: translate(50%, 250px);
+  }
+
+  body {
+    overflow: auto;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 648px) {
+  .b-main > h1 {
+    /* no transformX(-50%) because this would be after h1 being resized because of body's overflow */
+    left: calc(50% - 234px);
+  }
+}
+
+@media (max-width: 550px) {
+  .b-main > h1 {
+    font-size: 3rem;
+    left: calc(50% - 175.5px);
+  }
+}
+
+@media (max-width: 450px) {
+  .b-main > h1 {
+    font-size: 2rem;
+    left: calc(50% - 117px);
+  }
+
+  .b-main > img {
+    width: 250px;
+    height: 515px;
+    transform: translate(50%, 190px);
   }
 }
 </style>

@@ -13,6 +13,10 @@ export default {
 </script>
 
 <style>
+html {
+  background-color: #23262c;
+}
+
 body {
   font-size: 16px;
   margin: 0;
