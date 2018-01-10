@@ -40,9 +40,8 @@ export default {
 
 .b-main > h1 {
   position: absolute;
-  top: 30%;
-  transform: translateY(-50%);
-  left: 10%;
+  top: 200px;
+  left: 150px;
   font-size: 4rem;
   margin: 0;
 
@@ -53,8 +52,8 @@ export default {
 
 .b-main > a {
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 40px;
+  right: 50px;
 
   padding: 10px 20px;
   border: 1px solid #fff;
@@ -68,7 +67,40 @@ export default {
 
 .b-main > img {
   position: absolute;
-  right: 12.5%;
-  bottom: 5%;
+  right: 100px;
+  bottom: 50px;
+}
+
+@media (max-width: 1150px) {
+  .b-main > h1 {
+    top: 120px;
+    left: 90px;
+  }
+
+  .b-main > img {
+    right: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .b-main > img {
+    transform: translateY(250px);
+    transition: transform 250ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .b-main > img:hover {
+    transform: translateY(20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .b-main > img {
+    transform: translate(50%, 250px);
+    right: 50%;
+  }
+
+  .b-main > img:hover {
+    transform: translate(50%, 20px);
+  }
 }
 </style>

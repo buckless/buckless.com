@@ -16,6 +16,7 @@ export default {
 body {
   font-size: 16px;
   margin: 0;
+  overflow: hidden;
 }
 
 #app {
