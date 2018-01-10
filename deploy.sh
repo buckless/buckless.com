@@ -6,3 +6,4 @@ cp -r dist/* .
 git add .
 git commit -m "chore: release"
 git push -u origin master
+git checkout dev
