@@ -15,7 +15,7 @@
       Contact
     </a>
 
-    <img src="../assets/screen.png" width="352" height="725">
+    <img src="../assets/screen.png">
   </div>
 </template>
 
@@ -29,13 +29,9 @@ export default {
 .b-main {
   height: 100vh;
   width: 100vw;
-
-  background-color: #23262c;
-  background-image: radial-gradient(
-    circle at center,
-    rgba(101, 117, 135, 0.9) 0%,
-    rgba(101, 117, 135, 0) 100%
-  );
+  max-width: 1920px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .b-main > h1 {
@@ -68,7 +64,8 @@ export default {
 .b-main > img {
   position: absolute;
   right: 100px;
-  top: 150px;
+  top: calc(20vh - 20px);
+  max-height: 80vh;
 }
 
 @media (max-width: 1150px) {
@@ -82,40 +79,21 @@ export default {
   }
 }
 
-@media (max-width: 1000px) {
+@media(max-width: 950px) {
   .b-main > img {
-    transform: translateY(250px);
-    transition: transform 250ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .b-main > img:hover {
-    transform: translateY(20px);
-  }
-}
-
-@media (max-width: 768px) {
-  .b-main {
-    background-image: radial-gradient(
-      circle at center,
-      rgba(101, 117, 135, 0.9) 0%,
-      rgba(101, 117, 135, 0) 80%
-    );
-  }
-
-  .b-main > img {
-    transform: translate(50%, 250px);
-    transition: none;
-    right: 50%;
+    height: 515px;
+    left: 50%;
+    right: unset;
+    top: 440px;
+    transform: translateX(-50%);
+    width: 250px;
     margin-bottom: 20px;
-  }
-
-  .b-main > img:hover {
-    transform: translate(50%, 250px);
+    max-height: unset;
   }
 
   body {
     overflow: auto;
-    overflow-x: hidden;
+    overflow-x: none;
   }
 }
 
@@ -131,6 +109,10 @@ export default {
     font-size: 3rem;
     left: calc(50% - 175.5px);
   }
+
+  .b-main > img {
+    top: 400px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -140,9 +122,7 @@ export default {
   }
 
   .b-main > img {
-    width: 250px;
-    height: 515px;
-    transform: translate(50%, 190px);
+    top: 350px;
   }
 }
 </style>
