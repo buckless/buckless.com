@@ -11,6 +11,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+noscript {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 420px;
+  padding: 10px;
+  top: 10px;
+  background-color: #f39c12;
+  border: 1px solid #d35400;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
 .container {
   padding-right: 16px;
   padding-left: 16px;
@@ -55,6 +71,10 @@ body {
 
 .button:active {
   background-color: #14967c;
+}
+
+.responsive-image {
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {

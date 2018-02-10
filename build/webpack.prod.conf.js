@@ -12,6 +12,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
+const CompressionPlugin = require('compression-webpack-plugin')
+const Visualizer = require('webpack-visualizer-plugin')
+const PrerenderSpaPlugin = require('prerender-spa-plugin')
 const loadMinified = require('./load-minified')
 
 const env = config.build.env
@@ -84,6 +87,11 @@ const webpackConfig = merge(baseWebpackConfig, {
         )
       }
     }),
+    new PrerenderSpaPlugin(
+      path.join(__dirname, '../dist'),
+      [ '/' ]
+    ),
+    new CompressionPlugin(),
     // extract webpack runtime and module manifest to its own file in order to
     // prevent vendor hash from being updated whenever app bundle is updated
     new webpack.optimize.CommonsChunkPlugin({
@@ -105,7 +113,8 @@ const webpackConfig = merge(baseWebpackConfig, {
       staticFileGlobs: ['dist/**/*.{js,html,css}'],
       minify: true,
       stripPrefix: 'dist/'
-    })
+    }),
+    new Visualizer()
   ]
 })
 

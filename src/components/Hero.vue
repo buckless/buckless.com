@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="image md-7">
-        <img src="https://picsum.photos/3000/2000">
+        <img class="responsive-image" src="https://picsum.photos/3000/2000">
       </div>
     </div>
   </div>
@@ -24,7 +24,6 @@
 }
 
 .hero .cta h1 {
-  font-weight: 500;
   margin: 12px 0;
 }
 
@@ -54,7 +53,8 @@
 }
 
 .hero .cta button {
-  height: 100%;
+  /* Remove shadow height */
+  height: calc(100% - 3px);
   color: #fff;
   cursor: pointer;
   border: 0;
@@ -85,10 +85,6 @@
 
 .hero .image {
   margin-top: 16px;
-}
-
-.hero .image img {
-  width: 100%;
 }
 
 @media (min-width: 380px) {
