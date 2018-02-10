@@ -1,15 +1,14 @@
 {
-  "name": "buckless.com",
+  "name": "buckless",
   "version": "1.0.0",
-  "description": "buckless.com official website",
-  "author": "Gabriel JUCHAULT <gabriel.juchault@gmail.com>",
+  "description": "Buckless — Cashless simple et libre",
+  "author": "buckless <contact@buckless.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src",
-    "deploy": "sh deploy"
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "vue": "^2.5.2",

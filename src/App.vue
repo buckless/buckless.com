@@ -1,46 +1,24 @@
 <template>
   <div id="app">
-    <main>
-      <router-view></router-view>
-    </main>
+    <b-header />
+    <b-hero />
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+
 export default {
-  name: 'app'
+  name: 'app',
+
+  components: {
+    'b-header': Header,
+    'b-hero': Hero
+  }
 }
 </script>
 
+<style src="./main.css"></style>
 <style>
-html {
-  background-color: #23262c;
-  background-image: radial-gradient(
-    circle at center,
-    rgba(101, 117, 135, 0.9) 0%,
-    rgba(101, 117, 135, 0) 100%
-  );
-  background-repeat: no-repeat;
-}
-
-body {
-  font-size: 16px;
-  margin: 0;
-  overflow: hidden;
-}
-
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@media (max-width: 950px) {
-  html {
-    background-image: radial-gradient(
-      circle at top center,
-      rgba(101, 117, 135, 0.9) 0%,
-      rgba(101, 117, 135, 0) 85%
-    );
-  }
-}
 </style>

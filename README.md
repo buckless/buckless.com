@@ -1,6 +1,6 @@
-# buckless.com
+# buckless
 
-> buckless.com official website
+> Buckless — Cashless simple et libre
 
 ## Build Setup
 

@@ -1,6 +1,6 @@
 {
-  "name": "buckless.com",
-  "short_name": "buckless.com",
+  "name": "buckless",
+  "short_name": "Buckless",
   "icons": [
     {
       "src": "/static/img/icons/android-chrome-192x192.png",
