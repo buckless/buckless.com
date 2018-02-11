@@ -1,30 +1,73 @@
 <template>
-  <header class="container">
+  <header :class="isScrolling">
+    <div class="container">
       <img src="../assets/buckless.small.png" alt="Buckless Logo" height="47" width="30">
       <h1>Buckless</h1>
       <div class="space"></div>
       <a class="button" href="mailto:contact@buckless.com" target="_blank">Contact</a>
+    </div>
   </header>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+      scrolling: false
+    }
+  },
+
+  computed: {
+    isScrolling () {
+      return { 'is-scrolling': this.scrolling }
+    }
+  },
+
+  methods: {
+    checkScrolling () {
+      this.scrolling = window.scrollY > 0
+      requestAnimationFrame(this.checkScrolling)
+    }
+  },
+
+  mounted () {
+    requestAnimationFrame(this.checkScrolling)
+  }
+}
+</script>
+
 <style>
 header {
-  display: flex;
-  align-items: center;
+  position: fixed;
+  top: 0;
   height: 70px;
+  width: 100vw;
+
+  background-color: #fff;
+  transition: .2s box-shadow ease;
 }
 
-header > img {
+header.is-scrolling {
+  box-shadow: 0 2px 4px rgba(0,0,0,.12);
+}
+
+header .container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+header img {
   margin-right: 16px;
 }
 
-header > h1 {
+header h1 {
   margin: 0;
   font-size: 1.6rem;
   font-weight: 300;
 }
 
-header > .space {
+header .space {
   flex: 1;
 }
 
