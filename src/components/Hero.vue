@@ -4,15 +4,18 @@
       <div class="cta md-5">
         <h1>Cashless simple et libre</h1>
         <div class="form">
-          <input placeholder="Entrez votre adresse mail">
+          <input placeholder="Entrez votre adresse mail" autofocus autocomplete="off">
           <button class="button">
             <span class="validate">Valider</span>
-            <span class="arrow">→</span>
+            <svg fill="#fff" height="13" viewBox="0 0 16 13" width="16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.41 0L8 1.41l4.17 4H0v2h12.17l-4.17 4 1.41 1.41L16 6.41z"/>
+            </svg>
           </button>
         </div>
+        <p>Envoyez-moi une plaquette</p>
       </div>
       <div class="image md-7">
-        <img class="responsive-image" src="https://picsum.photos/3000/2000">
+        <img class="responsive-image" src="https://picsum.photos/1000/1000">
       </div>
     </div>
   </div>
@@ -90,6 +93,7 @@
 @media (min-width: 380px) {
   .hero .validate {
     display: inline;
+    margin-right: 8px;
   }
 }
 
@@ -100,6 +104,13 @@
 
   .hero .image {
     margin-top: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    height: calc(100vh - 80px - 70px);
+    margin-top: 80px;
   }
 }
 </style>
