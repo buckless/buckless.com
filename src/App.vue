@@ -3,6 +3,7 @@
     <b-header />
     <b-hero />
     <b-yourevent />
+    <b-flow />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import YourEvent from '@/components/YourEvent'
+import Flow from '@/components/Flow'
 
 export default {
   name: 'app',
@@ -17,7 +19,8 @@ export default {
   components: {
     'b-header': Header,
     'b-hero': Hero,
-    'b-yourevent': YourEvent
+    'b-yourevent': YourEvent,
+    'b-flow': Flow
   }
 }
 </script>

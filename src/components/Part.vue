@@ -1,10 +1,10 @@
 <template>
   <div class="part container">
     <div :class="row">
-      <div class="md-5" :style="paddingTop">
+      <div :class="column" :style="paddingTop">
         <slot/>
       </div>
-      <div class="image md-7">
+      <div class="image md-7" v-if="!full">
         <slot name="image"/>
       </div>
     </div>
@@ -15,6 +15,11 @@
 export default {
   props: {
     reverse: {
+      type: Boolean,
+      default: false
+    },
+
+    full: {
       type: Boolean,
       default: false
     },
@@ -33,6 +38,10 @@ export default {
       }
     },
 
+    column () {
+      return this.full ? '' : 'md-5'
+    },
+
     paddingTop () {
       return { paddingTop: `${this.contentPadding}px` }
     }
@@ -47,8 +56,9 @@ export default {
 
 @media (min-width: 992px) {
   .part {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 80px - 80px);
     margin-top: 80px;
+    padding-top: 60px;
   }
 }
 </style>
