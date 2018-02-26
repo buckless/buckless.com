@@ -84,6 +84,14 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .1s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
 @media (min-width: 768px) {
   .container {
       width: 750px;
