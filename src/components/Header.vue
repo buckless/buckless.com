@@ -10,6 +10,7 @@
 </template>
 
 <script>
+
 export default {
   data () {
     return {
@@ -67,6 +68,10 @@ header h1 {
   margin: 0;
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+header a.button {
+  height: 36px;
 }
 
 header .space {

@@ -56,7 +56,6 @@ export default {
 
 @media (min-width: 992px) {
   .part {
-    height: calc(100vh - 80px - 80px);
     margin-top: 80px;
     padding-top: 60px;
   }

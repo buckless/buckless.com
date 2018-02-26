@@ -89,9 +89,11 @@
 }
 
 .hero .image {
-      background-image: url(/static/img/hero.0fdc275.jpg);
-      flex: 1;
-      background-size: cover;
+  background-image: url("../assets/hero.png");
+  flex: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 768px) {
