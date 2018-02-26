@@ -34,13 +34,19 @@
         <div class="flow__content__page" key="rebranding" v-if="currentPage === 0">
           <h2>Rebranding</h2>
           <p>
-            Customisez l'apparence de votre cashless pour une intégration encore plus facile.
+            <ul>
+              <li>Personnalisez l'apparence de vos cartes et bracelets et créez des souvenirs</li>
+              <li>Intégrez la gestion du compte cashless au sein de votre application</li>
+            </ul>
           </p>
         </div>
         <div class="flow__content__page" key="security" v-if="currentPage === 1">
           <h2>Sécurité</h2>
           <p>
-            Aucune perte humaine. Une confiance totale dans les vendeurs. Quantité d'alcool, Alerte en temps réel, signalement santé.
+            <ul>
+              <li>Personnalisez l'apparence de vos cartes et bracelets et créez des souvenirs</li>
+              <li>Intégrez la gestion du compte cashless au sein de votre application</li>
+            </ul>
           </p>
         </div>
         <div class="flow__content__page" key="offline" v-if="currentPage === 2">
