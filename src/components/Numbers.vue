@@ -5,7 +5,7 @@
         <div class="md-6">
           <div class="numbers__circle">+20%</div>
           <p>
-            Foo bar foo bar
+            C'est l'augmentation moyenne de consommation observée sur un évènement après la mise en place d'un système cashless. C'est l'augmentation moyenne de consommation observée sur un évènement après la mise en place d'un système cashless. C'est l'augmentation moyenne de consommation observée sur un évènement après la mise en place d'un système cashless.
           </p>
         </div>
         <div class="md-6">
@@ -23,7 +23,7 @@
           </p>
         </div>
         <div class="md-6">
-          <div class="numbers__circle"></div>
+          <div class="numbers__circle">1min</div>
           <p>
             Foo bar foo bar
           </p>
@@ -46,14 +46,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 60px 0;
 }
 
 .numbers__circle {
-  height: 65px;
-  width: 65px;
+  height: 85px;
+  width: 85px;
   background-color: #444;
   border-radius: 50%;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 </style>
