@@ -1,5 +1,5 @@
 <template>
-  <b-part reverse contentPadding="0">
+  <b-part reverse :contentPadding="0">
     <h2 style="margin-top: 0">Votre évènement</h2>
     <p>
       Arrêtez d'adapter votre évènement aux contraintes du paiement&nbsp;: le cashless s'adapte à vous.

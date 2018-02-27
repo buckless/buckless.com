@@ -32,13 +32,22 @@
     <div class="flow__content container">
       <transition name="fade" mode="out-in">
         <div class="flow__content__page" key="rebranding" v-if="currentPage === 0">
-          <h2>Rebranding</h2>
-          <p>
-            <ul>
-              <li>Personnalisez l'apparence de vos cartes et bracelets et créez des souvenirs</li>
-              <li>Intégrez la gestion du compte cashless au sein de votre application</li>
-            </ul>
-          </p>
+          <div class="container">
+            <div class="row">
+              <div class="md-5">
+                <img src="https://www.idcapt.com/images/D-400x700_225px.png">
+              </div>
+              <div class="md-7">
+                <h2>Rebranding</h2>
+                <p>
+                  <ul>
+                    <li>Personnalisez l'apparence de vos cartes et bracelets et créez des souvenirs</li>
+                    <li>Intégrez la gestion du compte cashless au sein de votre application</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="flow__content__page" key="security" v-if="currentPage === 1">
           <h2>Sécurité</h2>
