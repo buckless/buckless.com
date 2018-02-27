@@ -115,7 +115,7 @@ export default {
   justify-content: center;
   position: relative;
   height: 180px;
-  background-color: #eaeaea;
+  background-color: #f4f4f4;
 }
 
 .flow__header__circles,

@@ -35,7 +35,7 @@
 
 <style>
 .numbers {
-  background-color: #eaeaea;
+  background-color: #f4f4f4;
 }
 
 .numbers .row {
