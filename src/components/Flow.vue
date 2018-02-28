@@ -2,25 +2,25 @@
   <div class="flow">
     <div class="flow__header">
       <div class="flow__header__circles" ref="header">
-        <div @click="currentPage = 0">
+        <div @click="changePage(0)">
           <div class="flow__header__circle">
             <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
           </div>
           <div class="flow__header__title" :class="currentPage === 0 && 'flow__header__title--active'">Rebranding</div>
         </div>
-        <div @click="currentPage = 1">
+        <div @click="changePage(1)">
           <div class="flow__header__circle">
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
           </div>
           <div class="flow__header__title" :class="currentPage === 1 && 'flow__header__title--active'">Sécurité</div>
         </div>
-        <div @click="currentPage = 2">
+        <div @click="changePage(2)">
           <div class="flow__header__circle">
             <svg viewBox="0 0 24 24"><path d="M23.64 7c-.45-.34-4.93-4-11.64-4-1.5 0-2.89.19-4.15.48L18.18 13.8 23.64 7zm-6.6 8.22L3.27 1.44 2 2.72l2.05 2.06C1.91 5.76.59 6.82.36 7l11.63 14.49.01.01.01-.01 3.9-4.86 3.32 3.32 1.27-1.27-3.46-3.46z"/></svg>
           </div>
           <div class="flow__header__title" :class="currentPage === 2 && 'flow__header__title--active'">Offline</div>
         </div>
-        <div @click="currentPage = 3">
+        <div @click="changePage(3)">
           <div class="flow__header__circle">
             <svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
           </div>
@@ -80,26 +80,39 @@
 export default {
   data () {
     return {
-      currentPage: null
+      currentPage: null,
+      arrowLeft: '',
+      timeout: 0
     }
   },
 
-  computed: {
-    arrowLeft () {
+  methods: {
+    update () {
       if (this.currentPage === null) {
         return { transform: 'translateX(0)' }
       }
 
       const circle = this.$refs.header.children[this.currentPage].getBoundingClientRect()
 
-      return {
+      this.arrowLeft = {
         transform: `translateX(${circle.x + circle.width / 2}px)`
       }
+    },
+
+    changePage (page) {
+      this.currentPage = page
+      this.update()
     }
   },
 
   mounted () {
     this.currentPage = 0
+    this.update()
+
+    window.addEventListener('resize', () => {
+      cancelAnimationFrame(this.timeout)
+      requestAnimationFrame(this.update)
+    }, { passive: true })
   }
 }
 </script>
@@ -172,6 +185,7 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0;
+  will-change: transition;
   transition: .1s transform ease-out;
 }
 
