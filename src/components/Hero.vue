@@ -1,8 +1,8 @@
 <template>
   <div class="hero container">
-    <h1>Cashless simple et libre</h1>
+    <h1>Le cashless qui sécurise votre évènement</h1>
     <b-contact>
-      <p slot="after">Envoyez-moi une plaquette</p>
+      <p slot="after">Envoyez-moi un devis</p>
     </b-contact>
     <div class="image"></div>
   </div>

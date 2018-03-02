@@ -2,30 +2,36 @@
   <div class="numbers">
     <div class="container">
       <div class="row">
-        <div class="md-6">
+        <div class="md-5">
           <div class="numbers__circle">+20%</div>
+          <h3>Augmentation de la consommation</h3>
           <p>
-            C'est l'augmentation moyenne de consommation observée sur un évènement après la mise en place d'un système cashless. C'est l'augmentation moyenne de consommation observée sur un évènement après la mise en place d'un système cashless. C'est l'augmentation moyenne de consommation observée sur un évènement après la mise en place d'un système cashless.
+            C'est l'augmentation moyenne de la consommation observée sur un évènement après la mise en place d'un système cashless.
           </p>
         </div>
-        <div class="md-6">
+        <div class="md-2"></div>
+        <div class="md-5">
           <div class="numbers__circle">7-9s</div>
+          <h3>Durée moyenne de transaction</h3>
           <p>
-            Foo bar foo bar
+            Une transaction utilisant du liquide dure en moyenne 30 secondes. Accélérez vos flux avec le cashless. Plus besoin de monnaie, plus besoin de sortir son moyen de paiement.
           </p>
         </div>
       </div>
       <div class="row">
-        <div class="md-6">
+        <div class="md-5">
           <div class="numbers__circle">&lt;1%</div>
+          <h3>Taux d'erreur moyen</h3>
           <p>
-            Foo bar foo bar
+            Une fois que le cashless est mis en place, il devient rare de faire une erreur involontaire de paiement. Impossible de se tromper en rendant la monnaie ou en choisissant le prix: ils sont calculés automatiquement (VIP, promotions, etc.) !
           </p>
         </div>
-        <div class="md-6">
+        <div class="md-2"></div>
+        <div class="md-5">
           <div class="numbers__circle">1min</div>
+          <h3>Temps de formation opérateur</h3>
           <p>
-            Foo bar foo bar
+            L'interface a été pensée pour être la plus simple possible: il n'est pas nécessaire d'apporter plus d'une minute de formation aux opérateurs.
           </p>
         </div>
       </div>
@@ -42,12 +48,11 @@
   padding: 60px 0;
 }
 
-.numbers .md-6 {
+.numbers .md-5 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 60px 0;
 }
 
 .numbers__circle {

@@ -45,7 +45,7 @@ h1, h2, h3 {
   flex-direction: row-reverse;
 }
 
-.md-5, .md-6, .md-7 {
+.md-5, .md-6, .md-7, .md-2 {
   padding: 0 16px;
   width: 100%;
 }
@@ -101,6 +101,10 @@ h1, h2, h3 {
 @media (min-width: 992px) {
   .container {
       width: 970px;
+  }
+
+  .md-2 {
+    width: 16.66666667%;
   }
 
   .md-5 {

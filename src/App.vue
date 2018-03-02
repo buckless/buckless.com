@@ -7,7 +7,7 @@
     <b-flow />
     <b-numbers />
     <b-contact>
-      <h2 slot="before">Envoyez-moi une plaquette</h2>
+      <h2 slot="before">Envoyez-moi un devis</h2>
     </b-contact>
     <b-footer />
   </div>

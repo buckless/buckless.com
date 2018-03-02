@@ -1,10 +1,11 @@
 import Vue from 'vue'
+import { ImageComparator } from '@buckless/image-comparator'
 import App from './App'
-import Part from './components/Part'
 // import router from './router'
 
 Vue.config.productionTip = false
-Vue.component('b-part', Part)
+
+Vue.use(ImageComparator)
 
 /* eslint-disable no-new */
 new Vue({
