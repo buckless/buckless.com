@@ -7,7 +7,7 @@
     <b-flow />
     <b-numbers />
     <b-contact>
-      <h2 slot="before">Envoyez-moi un devis</h2>
+      <h2 slot="before">Je suis intéressé</h2>
     </b-contact>
     <b-footer />
   </div>
@@ -43,7 +43,7 @@ export default {
 
 <style>
 #app > .contact-wrapper {
-  padding: 64px 0;
+  padding: 64px 10%;
 }
 
 #app > .contact-wrapper h2 {

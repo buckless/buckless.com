@@ -42,10 +42,11 @@
 <style>
 .numbers {
   background-color: #f4f4f4;
+  padding: 60px 0;
 }
 
 .numbers .row {
-  padding: 60px 0;
+  margin: 0;
 }
 
 .numbers .md-5 {
@@ -66,5 +67,19 @@
   justify-content: center;
   align-items: center;
   font-size: 24px;
+}
+
+@media(min-width: 992px) {
+  .numbers {
+    overflow: hidden;
+  }
+
+  .numbers .row {
+    margin: 60px -16px;
+  }
+
+  .numbers .md-5 {
+    margin-bottom: 24px;
+  }
 }
 </style>

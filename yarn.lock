@@ -54,9 +54,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@buckless/image-comparator@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@buckless/image-comparator/-/image-comparator-0.1.0.tgz#cddc783eec4c791f901cada4b327a74e7becb75d"
+"@buckless/image-comparator@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@buckless/image-comparator/-/image-comparator-0.1.1.tgz#7bbd669e3db4537c3b1a9f5e7887df0d64689a93"
 
 abbrev@1:
   version "1.1.1"

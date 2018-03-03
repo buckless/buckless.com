@@ -2,7 +2,7 @@
   <div class="hero container">
     <h1>Le cashless qui sécurise votre évènement</h1>
     <b-contact>
-      <p slot="after">Envoyez-moi un devis</p>
+      <p slot="after">Je suis intéressé</p>
     </b-contact>
     <div class="image"></div>
   </div>

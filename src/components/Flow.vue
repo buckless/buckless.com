@@ -1,6 +1,6 @@
 <template>
   <div class="flow">
-    <div class="flow__header">
+    <div class="flow__header" ref="container">
       <div class="flow__header__circles" ref="header">
         <div @click="changePage(0)">
           <div class="flow__header__circle">
@@ -82,6 +82,7 @@
                 <p>
                   Graphiques intégrés à l'application. Vous avez vos propres outils de data vizualisation ou vos outils de trésorerie ? Nous exportons dans un format compatible.
                 </p>
+                <img src="../assets/charts.png">
               </div>
             </div>
           </div>
@@ -113,9 +114,10 @@ export default {
       }
 
       const circle = this.$refs.header.children[this.currentPage].getBoundingClientRect()
+      const container = this.$refs.container
 
       this.arrowLeft = {
-        transform: `translateX(${circle.x + circle.width / 2}px)`
+        transform: `translateX(${container.scrollLeft + circle.x + circle.width / 2}px)`
       }
     },
 
@@ -138,15 +140,11 @@ export default {
 </script>
 
 <style>
-.flow {
-  padding-top: 80px;
-}
-
 .flow__header {
   display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
+  overflow-x: overlay;
   height: 180px;
   background-color: #f4f4f4;
 }
@@ -156,6 +154,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 24px;
 }
 
 .flow__header__circle {
@@ -226,8 +225,11 @@ export default {
 }
 
 .flow__content__page {
-  min-height: 450px;
   padding-top: 24px;
+}
+
+.flow__content__page-1 {
+  padding-bottom: 24px;
 }
 
 .flow__content__page-3 {
@@ -237,6 +239,7 @@ export default {
 }
 
 .flow__content__page-3 img {
+  max-width: 100%;
   transform: translateY(20px);
   transition: .1s ease-out transform;
 }
@@ -245,8 +248,28 @@ export default {
   transform: translateY(0);
 }
 
-
 .flow__content__page .md-7 {
   margin: 0 auto;
+}
+
+.flow__content__page-4 {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.flow__content__page-4 img {
+  max-width: 100%;
+  transform: translateY(20px);
+  transition: .1s ease-out transform;
+}
+
+.flow__content__page-4 img:hover {
+  transform: translateY(0);
+}
+
+@media(min-width: 568px) {
+  .flow__header {
+    justify-content: center;
+  }
 }
 </style>

@@ -26,10 +26,17 @@
 </template>
 
 <style>
+.your-event {
+  margin: 60px auto;
+}
+
+.your-event .image {
+  margin-bottom: 24px;
+}
+
 @media (min-width: 992px) {
-  .your-event {
-    margin-top: 80px;
-    padding-top: 60px;
+  .your-event .image {
+    margin-bottom: 0;
   }
 }
 </style>
