@@ -57,6 +57,7 @@
                 <p>
                   Prévenez vos vendeurs avec un système d’alerte en temps réel. Les conducteurs ou les mineurs peuvent avoir des prix personnalisés. Vos vendeurs peuvent même prévenir les équipes de secours en cas d’incident.
                 </p>
+                <b-alert />
               </div>
             </div>
           </div>
@@ -93,10 +94,15 @@
 </template>
 
 <script>
+import Alert from './Flow-Alert'
 import before from '../assets/before.jpg'
 import after from '../assets/after.jpg'
 
 export default {
+  components: {
+    'b-alert': Alert
+  },
+
   data () {
     return {
       currentPage: null,
@@ -229,6 +235,10 @@ export default {
 }
 
 .flow__content__page-1 {
+  padding-bottom: 24px;
+}
+
+.flow__content__page-2 {
   padding-bottom: 24px;
 }
 
