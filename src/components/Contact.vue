@@ -4,7 +4,7 @@
     <form action="https://formspree.io/contact@buckless.com" method="post" class="contact">
       <input type="mail" name="email" placeholder="Entrez votre adresse mail" autofocus="autofocus" autocomplete="off">
       <input type="hidden" name="message" value="Demande de contact">
-      <input type="hidden" name="_next" value="https://buckless.com/thanks" />
+      <input type="hidden" name="_next" value="http://buckless.com/thanks.html" />
       <button class="button">
         Valider
         <svg fill="#fff" height="13" viewBox="0 0 16 13" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M9.41 0L8 1.41l4.17 4H0v2h12.17l-4.17 4 1.41 1.41L16 6.41z"></path></svg>

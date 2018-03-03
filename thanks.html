@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buckless — Le cashless qui sécurise votre évènement</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-16x16.png">
+    <!--[if IE]><link rel="shortcut icon" href="/static/img/icons/favicon.ico"><![endif]-->
+    <!-- Add to home screen for Android and modern mobile browsers -->
+    <meta name="theme-color" content="#1abc9c">
+    <meta name="msapplication-TileColor" content="#1abc9c">
+
+    <!-- Add to home screen for Safari on iOS -->
+    <% for (var chunk of webpack.chunks) {
+        for (var file of chunk.files) {
+          if (file.match(/\.(js|css)$/)) { %>
+    <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="container">
+          <img
+            src="/<%= webpack.assets.find(asset => asset.name.indexOf('buckless.small') > -1).name %>"
+            alt="Buckless Logo"
+            height="47"
+            width="30">
+          <h1>Buckless</h1>
+          <div class="space"></div>
+          <a href="mailto:contact@buckless.com" target="_blank" class="button">Contact</a>
+        </div>
+      </header>
+      <main>
+        <h1>Nous avons bien reçu votre demande</h1>
+        <p>Nous y répondrons le plus rapidement possible</p>
+        <a href="/" class="button">Retour au site</a>
+      </main>
+      <footer>
+        © 2018 Studio Async.
+        <div class="space"></div>
+      </footer>
+    </div>
+
+    <style>
+      * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body, input, button {
+        margin: 0;
+        color: #2c3e50;
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        height: 70px;
+        width: 100vw;
+        z-index: 50;
+        background-color: #fff;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.12);
+        box-shadow: 0 1px 1px rgba(0,0,0,.12);
+      }
+
+      header .container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          height: 100%;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+      }
+
+      header img {
+          margin-right: 16px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+
+      header .space {
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+      }
+
+      header a.button {
+          height: 36px;
+      }
+
+      .button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-shadow: 0 3px 0 #14967c, inset 0 1px 0 rgba(255,255,255,.3);
+        box-shadow: 0 3px 0 #14967c, inset 0 1px 0 rgba(255,255,255,.3);
+        border-radius: 3px;
+        background-color: #1abc9c;
+        color: #fff;
+        font-size: 0.875rem;
+        height: 42px;
+        font-weight: 500;
+        padding: 0 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .container {
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100vh;
+        padding: 120px 0 60px 0;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      main .button {
+        max-width: 300px;
+        min-width: 170px;
+        margin: 0 auto;
+      }
+
+      footer {
+        background-color: #444;
+        color: #fff;
+        padding: 48px;
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+      }
+
+      @media (min-width: 576px) {
+        header {
+          font-size: 2rem;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          width: 750px;
+        }
+
+        footer .space {
+          height: 10px;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .container {
+          width: 970px;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+          width: 1170px;
+        }
+      }
+    </style>
+  </body>
+</html>

@@ -46,7 +46,6 @@ header {
 
   background-color: #fff;
   box-shadow: 0 1px 1px rgba(0,0,0,.12);
-  transition: .2s box-shadow ease;
 }
 
 header.is-scrolling {

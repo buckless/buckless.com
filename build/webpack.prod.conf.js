@@ -73,6 +73,18 @@ const webpackConfig = merge(baseWebpackConfig, {
       serviceWorkerLoader: `<script>${loadMinified(path.join(__dirname,
         './service-worker-prod.js'))}</script>`
     }),
+    new HtmlWebpackPlugin({
+      filename: config.build.thanks,
+      template: 'thanks.html',
+      inject: false,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+        // more options:
+        // https://github.com/kangax/html-minifier#options-quick-reference
+      },
+    }),
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
