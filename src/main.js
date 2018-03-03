@@ -1,15 +1,15 @@
 import Vue from 'vue'
-import { ImageComparator } from '@buckless/image-comparator'
+import { ImageComparator } from '@buckless/image-comparator/dist/imagecomparator'
 import App from './App'
-// import router from './router'
 
 Vue.config.productionTip = false
 
 Vue.use(ImageComparator)
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  // router,
+const app = new Vue({
   render: h => h(App)
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+  app.$mount('#app')
 })

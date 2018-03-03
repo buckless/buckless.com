@@ -87,10 +87,6 @@ const webpackConfig = merge(baseWebpackConfig, {
         )
       }
     }),
-    new PrerenderSpaPlugin(
-      path.join(__dirname, '../dist'),
-      [ '/' ]
-    ),
     new CompressionPlugin(),
     // extract webpack runtime and module manifest to its own file in order to
     // prevent vendor hash from being updated whenever app bundle is updated
@@ -114,6 +110,13 @@ const webpackConfig = merge(baseWebpackConfig, {
       minify: true,
       stripPrefix: 'dist/'
     }),
+    new PrerenderSpaPlugin(
+      path.join(__dirname, '../dist'),
+      [ '/' ],
+      {
+        captureAfterElementExists: '.app'
+      }
+    ),
     new Visualizer()
   ]
 })
