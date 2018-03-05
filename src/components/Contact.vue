@@ -18,7 +18,7 @@
 .contact-wrapper {
   width: 100%;
   max-width: 570px;
-  padding: 0 10%;
+  padding: 24px 10% 0 10%;
   margin: 24px auto;
   background-color: #fff;
 }
