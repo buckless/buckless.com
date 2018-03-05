@@ -2,9 +2,9 @@
   <footer>
     &copy; {{ year }} Studio Async.
     <div class="space" />
-<!--     <a href="#">L'entreprise</a>
-    <a href="#">Médias</a>
-    <a href="#">Mentions légales</a> -->
+    <!-- <a href="#">L'entreprise</a> -->
+    <router-link to="medias">Médias</router-link>
+    <router-link to="mentions-legales">Mentions légales</router-link>
   </footer>
 </template>
 
