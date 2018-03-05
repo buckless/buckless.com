@@ -4,7 +4,7 @@
     <form action="https://formspree.io/contact@buckless.com" method="post" class="contact">
       <input type="mail" name="email" placeholder="Entrez votre adresse mail" autofocus="autofocus" autocomplete="off">
       <input type="hidden" name="message" value="Demande de contact">
-      <input type="hidden" name="_next" value="http://buckless.com/thanks.html" />
+      <input type="hidden" name="_next" value="http://buckless.com/thanks" />
       <button class="button">
         Valider
         <svg fill="#fff" height="13" viewBox="0 0 16 13" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M9.41 0L8 1.41l4.17 4H0v2h12.17l-4.17 4 1.41 1.41L16 6.41z"></path></svg>
@@ -16,9 +16,10 @@
 
 <style>
 .contact-wrapper {
+  box-shadow: 0 2px 4px rgba(0,0,0,.12);
   width: 100%;
   max-width: 570px;
-  padding: 24px 10% 0 10%;
+  padding: 48px 10%;
   margin: 24px auto;
   background-color: #fff;
 }
@@ -75,11 +76,12 @@
   margin-left: 4px;
 }
 
-.contact p {
-  margin-bottom: 48px;
-}
-
 @media (min-width: 768px) {
+  .contact-wrapper {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
   .contact {
     flex-direction: row;
   }

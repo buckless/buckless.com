@@ -1,5 +1,6 @@
 <template>
   <div class="hero container">
+    <b-waves />
     <h1>Le cashless qui sécurise votre évènement</h1>
     <b-contact>
       <p slot="after">Je suis intéressé</p>
@@ -10,9 +11,11 @@
 
 <script>
 import Contact from './Contact'
+import Waves from '@/components/Waves'
 
 export default {
   components: {
+    'b-waves': Waves,
     'b-contact': Contact
   }
 }
@@ -21,26 +24,38 @@ export default {
 <style>
 .hero {
   display: flex;
+  position: relative;
   flex-direction: column;
-  height: 100vh;
-  padding: 120px 0 60px 0;
-  overflow: hidden;
+  min-height: 100vh;
+  padding: 70px 0;
   text-align: center;
 }
 
 .hero h1 {
-  margin: 12px 0;
+  padding: 0 4px;
+  margin: 64px 0 40px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .hero .contact-wrapper {
-  margin-bottom: 48px;
+  position: relative;
+  margin-bottom: 70px;
+  z-index: 2;
 }
 
 .hero .image {
+  position: relative;
+  z-index: 2;
+  min-height: 250px;
   background-image: url("../assets/hero.png");
   flex: 1;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.hero .contact-wrapper p {
+  margin-bottom: 0;
 }
 </style>

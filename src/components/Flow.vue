@@ -60,6 +60,7 @@
                   Prévenez vos vendeurs avec un système d’alerte en temps réel. Les conducteurs ou les mineurs peuvent avoir des prix personnalisés. Vos vendeurs peuvent même prévenir les équipes de secours en cas d’incident.
                 </p>
                 <b-alert />
+                <p class="italic">Exemple d'alerte administrateur</p>
               </div>
             </div>
           </div>
@@ -290,6 +291,11 @@ export default {
   padding-bottom: 24px;
 }
 
+.flow__content__page-2 p.italic {
+  text-align: center;
+  font-style: italic;
+}
+
 .flow__content__page-3 {
   min-height: 0;
   max-height: 379px;
@@ -317,12 +323,6 @@ export default {
 
 .flow__content__page-4 img {
   max-width: 100%;
-  transform: translateY(20px);
-  transition: .1s ease-out transform;
-}
-
-.flow__content__page-4 img:hover {
-  transform: translateY(0);
 }
 
 @media(min-width: 568px) {
@@ -334,7 +334,7 @@ export default {
 @media(min-width: 602px) {
   .flow__header-wrapper:before,
   .flow__header-wrapper:after {
-    /* content: none !important; */
+    content: none !important;
   }
 }
 </style>

@@ -96,11 +96,21 @@ h1, h2, h3 {
   .container {
       width: 750px;
   }
+
+  .full-cancel-container {
+    margin-left: calc(-1 * (100vw / 2 - 750px / 2));
+    margin-right: calc(-1 * (100vw / 2 - 750px / 2));
+  }
 }
 
 @media (min-width: 992px) {
   .container {
       width: 970px;
+  }
+
+  .full-cancel-container {
+    margin-left: calc(-1 * (100vw / 2 - 970px / 2));
+    margin-right: calc(-1 * (100vw / 2 - 970px / 2));
   }
 
   .md-2 {
@@ -123,5 +133,10 @@ h1, h2, h3 {
 @media (min-width: 1200px) {
   .container {
       width: 1170px;
+  }
+
+  .full-cancel-container {
+    margin-left: calc(-1 * (100vw / 2 - 1170px / 2));
+    margin-right: calc(-1 * (100vw / 2 - 1170px / 2));
   }
 }

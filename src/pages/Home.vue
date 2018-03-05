@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <b-waves />
+  <div class="home">
     <b-header />
     <b-hero />
     <b-yourevent />
@@ -18,7 +17,6 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import YourEvent from '@/components/YourEvent'
 import Flow from '@/components/Flow'
-import Waves from '@/components/Waves'
 import Numbers from '@/components/Numbers'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
@@ -29,10 +27,35 @@ export default {
     'b-hero': Hero,
     'b-yourevent': YourEvent,
     'b-flow': Flow,
-    'b-waves': Waves,
     'b-numbers': Numbers,
     'b-contact': Contact,
     'b-footer': Footer
   }
 }
 </script>
+
+<style>
+.home {
+  overflow-x: hidden;
+}
+
+.home:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.home > .contact-wrapper {
+  padding: 64px 10%;
+  box-shadow: none;
+}
+
+.home > .contact-wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+</style>

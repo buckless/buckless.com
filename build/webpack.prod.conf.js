@@ -13,6 +13,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const Visualizer = require('webpack-visualizer-plugin')
 const PrerenderSpaPlugin = require('prerender-spa-plugin')
 const loadMinified = require('./load-minified')
@@ -85,6 +86,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         // https://github.com/kangax/html-minifier#options-quick-reference
       },
     }),
+    new FaviconsWebpackPlugin('./static/logos/logo.black.transparent@2x.png'),
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',

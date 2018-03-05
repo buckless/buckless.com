@@ -1,5 +1,5 @@
 <template>
-  <div class="waves"></div>
+  <div class="waves full-cancel-container"></div>
 </template>
 
 <style>
@@ -11,6 +11,6 @@
   right: 0;
   height: 455px;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
 }
 </style>
