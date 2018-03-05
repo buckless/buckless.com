@@ -17,6 +17,7 @@
 <style>
 .contact-wrapper {
   box-shadow: 0 2px 4px rgba(0,0,0,.12);
+  border-radius: 3px;
   width: 100%;
   max-width: 570px;
   padding: 48px 10%;

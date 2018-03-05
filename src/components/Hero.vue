@@ -40,7 +40,7 @@ export default {
 
 .hero .contact-wrapper {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   z-index: 2;
 }
 
@@ -57,5 +57,11 @@ export default {
 
 .hero .contact-wrapper p {
   margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding: 70px 0 20px 0;
+  }
 }
 </style>
