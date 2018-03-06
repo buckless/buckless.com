@@ -7,8 +7,8 @@
       <div class="md-5">
         <h2 style="margin-top: 0">Votre évènement</h2>
         <p>
-          Arrêtez d'adapter votre évènement aux contraintes du paiement : le cashless s'adapte à vous.
-          Fini les contraintes de délestage et les files d'attente interminables, nos terminaux mobiles possèdent une autonomie de plusieurs jours et se rechargent sans fil.
+          Arrêtez d'adapter votre évènement aux contraintes du paiement&nbsp;: le cashless s'adapte à vous.
+          Finies les contraintes de délestage et les files d'attente interminables, nos terminaux mobiles possèdent une autonomie de plusieurs jours et se rechargent sans fil.
         </p>
         <h2>Votre monnaie</h2>
         <p>
