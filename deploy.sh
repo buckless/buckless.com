@@ -1,9 +1,13 @@
 #!/bin/sh
 
-yarn build >> /dev/null
-git checkout master >> /dev/null
-cp -r dist/* .
+yarn build
+mv dist tmpdist
+git checkout master
+rm -r icons*
+rm -r static
+mv tmpdist/* .
+rm -r tmpdist
+rm stats.html
 git add .
 git commit -m "chore: release"
-git push -u origin master
-git checkout dev
+git push
