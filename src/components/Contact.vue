@@ -1,8 +1,10 @@
 <template>
   <div class="contact-wrapper">
-    <slot name="before" />
+    <label :for="emailId">
+      <slot name="before" />
+    </label>
     <form action="https://formspree.io/contact@buckless.com" method="post" class="contact">
-      <input type="mail" name="email" placeholder="Entrez votre adresse mail" autofocus="autofocus" autocomplete="off">
+      <input type="mail" :id="emailId" name="email" placeholder="Entrez votre adresse mail" autofocus="autofocus" autocomplete="off">
       <input type="hidden" name="message" value="Demande de contact">
       <input type="hidden" name="_next" value="http://buckless.com/thanks" />
       <button class="button">
@@ -10,9 +12,21 @@
         <svg fill="#fff" height="13" viewBox="0 0 16 13" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M9.41 0L8 1.41l4.17 4H0v2h12.17l-4.17 4 1.41 1.41L16 6.41z"></path></svg>
       </button>
     </form>
-    <slot name="after" />
+    <label :for="emailId">
+      <slot name="after" />
+    </label>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    emailId () {
+      return Math.random()
+    }
+  }
+}
+</script>
 
 <style>
 .contact-wrapper {
