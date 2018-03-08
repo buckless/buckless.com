@@ -73,7 +73,7 @@
                 <p>
                   Un problème de réseau ? Si une borne se déconnecte momentanément du serveur, elle continue de fonctionner. Elle se synchronise dès la reconnexion ou à la fin de l'évènement.
                 </p>
-                <img src="../assets/offline.jpg">
+                <img src="../assets/offline.jpg" alt="Mode dégradé">
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@
                 <p>
                   Graphiques intégrés à l'application. Vous avez vos propres outils de data vizualisation ou vos outils de trésorerie ? Nous exportons dans un format compatible.
                 </p>
-                <img src="../assets/charts.png">
+                <img src="../assets/charts.png" alt="Trésorerie">
               </div>
             </div>
           </div>
