@@ -11,3 +11,4 @@ rm stats.html
 git add .
 git commit -m "chore: release"
 git push
+git checkout dev
