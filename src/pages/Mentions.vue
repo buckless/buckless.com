@@ -14,13 +14,12 @@
         2 Rue Gustave Eiffel, 10430 Rosières-prés-Troyes<br/>
         Téléphone :+33 6 46 73 95 77<br/>
         Email : contact@buckless.com<br/>
-        Site Web : buckless.com<br/>
+        Site Web : <a href="https://buckless.com">https://buckless.com</a><br/>
         <br/>
         <strong>Hébergement :</strong><br/>
         <br/>
-        Hébergeur : GitHub, Inc.<br/>
-        88 Colin P Kelly Jr St San Francisco, CA 94107<br/>
-        Site Web : github.com<br/>
+        Hébergeur : Online.net<br/>
+        Site Web : <a href="https://online.net">https://online.net</a><br/>
         <br/>
         <strong>Développement :</strong><br/>
         <br/>

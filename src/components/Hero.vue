@@ -3,7 +3,7 @@
     <b-waves />
     <h1>Le cashless qui sécurise votre évènement</h1>
     <b-contact>
-      <p slot="after">Je suis intéressé</p>
+      <p slot="after">Je suis intéressé(e)</p>
     </b-contact>
     <div class="image"></div>
   </div>

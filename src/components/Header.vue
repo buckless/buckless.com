@@ -1,8 +1,10 @@
 <template>
   <header :class="isScrolling">
     <div class="container">
-      <img src="../assets/buckless.small.png" alt="Buckless Logo" height="47" width="30">
-      <h1>Buckless</h1>
+      <a href="/">
+        <img src="../assets/buckless.small.png" alt="Buckless Logo" height="47" width="30">
+        <h1>Buckless</h1>
+      </a>
       <div class="space"></div>
       <a class="button" href="mailto:contact@buckless.com" target="_blank">Contact</a>
     </div>
@@ -60,6 +62,16 @@ header .container {
 
 header img {
   margin-right: 16px;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: inherit;
 }
 
 header h1 {

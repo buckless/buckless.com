@@ -6,7 +6,7 @@
     <b-flow />
     <b-numbers />
     <b-contact>
-      <h2 slot="before">Je suis intéressé</h2>
+      <h2 slot="before">Je suis intéressé(e)</h2>
     </b-contact>
     <b-footer />
   </div>
