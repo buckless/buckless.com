@@ -9,7 +9,7 @@
         <strong>Editeur du Site :</strong><br/>
         <br/>
         Studio Async<br/>
-        Numéro de SIRET : En cours d'immatriculation<br/>
+        Numéro de SIRET : 83883915700016<br/>
         Responsable editorial : Studio Async<br/>
         2 Rue Gustave Eiffel, 10430 Rosières-prés-Troyes<br/>
         Téléphone :+33 6 46 73 95 77<br/>
