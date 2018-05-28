@@ -45,7 +45,7 @@ h1, h2, h3 {
   flex-direction: row-reverse;
 }
 
-.md-5, .md-6, .md-7, .md-2 {
+.md-5, .md-6, .md-7, .md-2, .md-12 {
   padding: 0 16px;
   width: 100%;
 }

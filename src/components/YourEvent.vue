@@ -22,8 +22,46 @@
         </p>
       </div>
     </div>
+    <div class="row partners">
+      <div class="md-12">
+        <h2>Partenaires</h2>
+        <div class="imgs">
+          <LazyImg :src="gala" />
+          <LazyImg :src="grandest" />
+          <LazyImg :src="adutt" />
+          <LazyImg :src="tekliss" />
+          <LazyImg :src="waycom" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+import LazyImg from './LazyImg'
+
+import gala from '../assets/partner.gala.utt.png'
+import grandest from '../assets/partner.grand.est.jpg'
+import adutt from '../assets/partner.adutt.png'
+import tekliss from '../assets/partner.tekliss.png'
+import waycom from '../assets/partner.waycom.png'
+
+export default {
+  components: {
+    LazyImg
+  },
+
+  data () {
+    return {
+      gala,
+      grandest,
+      adutt,
+      tekliss,
+      waycom
+    }
+  }
+}
+</script>
 
 <style>
 .your-event {
@@ -32,6 +70,24 @@
 
 .your-event .image {
   margin-bottom: 24px;
+}
+
+.partners {
+  margin-top: 24px;
+}
+
+.partners .lazy-img {
+  max-width: 120px;
+  margin: 0 auto;
+}
+
+.partners .imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-column-gap: 16PX;
+  grid-row-gap: 16px;
+  align-items: center;
+  margin: 16px;
 }
 
 @media (min-width: 992px) {
