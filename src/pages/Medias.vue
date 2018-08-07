@@ -4,54 +4,67 @@
     <main class="container">
       <h1>Médias</h1>
       <h2>Logos</h2>
-      <img class="white" src="/static/logos/logo.full.black.transparent.svg">
+      <img class="white" src="/static/logos/logo.full.black.transparent.png">
       <div class="links">
         <a href="/static/logos/logo.full.black.transparent.svg">SVG</a>
         <a href="/static/logos/logo.full.black.transparent.png">PNG</a>
         <a href="/static/logos/logo.full.black.transparent@2x.png">PNG (x2)</a>
       </div>
-      <img class="white" src="/static/logos/logo.full.black.white.svg">
+      <img class="white" src="/static/logos/logo.full.black.white.png">
       <div class="links">
         <a href="/static/logos/logo.full.black.white.svg">SVG</a>
         <a href="/static/logos/logo.full.black.white.png">PNG</a>
         <a href="/static/logos/logo.full.black.white@2x.png">PNG (x2)</a>
       </div>
-      <img src="/static/logos/logo.full.white.black.svg">
+      <img src="/static/logos/logo.full.white.black.png">
       <div class="links">
         <a href="/static/logos/logo.full.white.black.svg">SVG</a>
         <a href="/static/logos/logo.full.white.black.png">PNG</a>
         <a href="/static/logos/logo.full.white.black@2x.png">PNG (x2)</a>
       </div>
-      <img src="/static/logos/logo.full.white.blue.svg">
+      <img src="/static/logos/logo.full.white.blue.png">
       <div class="links">
         <a href="/static/logos/logo.full.white.blue.svg">SVG</a>
         <a href="/static/logos/logo.full.white.blue.png">PNG</a>
         <a href="/static/logos/logo.full.white.blue@2x.png">PNG (x2)</a>
       </div>
-      <img class="white" src="/static/logos/logo.black.transparent.svg">
+      <img src="/static/logos/logo.full.white.transparent.png" class="transparent">
+      <div class="links">
+        <a href="/static/logos/logo.full.white.transparent.svg">SVG</a>
+        <a href="/static/logos/logo.full.white.transparent.png">PNG</a>
+        <a href="/static/logos/logo.full.white.transparent@2x.png">PNG (x2)</a>
+      </div>
+      <img class="white" src="/static/logos/logo.black.transparent.png">
       <div class="links">
         <a href="/static/logos/logo.black.transparent.svg">SVG</a>
         <a href="/static/logos/logo.black.transparent.png">PNG</a>
         <a href="/static/logos/logo.black.transparent@2x.png">PNG (x2)</a>
       </div>
-      <img class="white" src="/static/logos/logo.black.white.svg">
+      <img class="white" src="/static/logos/logo.black.white.png">
       <div class="links">
         <a href="/static/logos/logo.black.white.svg">SVG</a>
         <a href="/static/logos/logo.black.white.png">PNG</a>
         <a href="/static/logos/logo.black.white@2x.png">PNG (x2)</a>
       </div>
-      <img src="/static/logos/logo.white.black.svg">
+      <img src="/static/logos/logo.white.black.png">
       <div class="links">
         <a href="/static/logos/logo.white.black.svg">SVG</a>
         <a href="/static/logos/logo.white.black.png">PNG</a>
         <a href="/static/logos/logo.white.black@2x.png">PNG (x2)</a>
       </div>
-      <img src="/static/logos/logo.white.blue.svg">
+      <img src="/static/logos/logo.white.blue.png">
       <div class="links">
         <a href="/static/logos/logo.white.blue.svg">SVG</a>
         <a href="/static/logos/logo.white.blue.png">PNG</a>
         <a href="/static/logos/logo.white.blue@2x.png">PNG (x2)</a>
       </div>
+      <img src="/static/logos/logo.white.transparent.png" class="transparent">
+      <div class="links">
+        <a href="/static/logos/logo.white.transparent.svg">SVG</a>
+        <a href="/static/logos/logo.white.transparent.png">PNG</a>
+        <a href="/static/logos/logo.white.transparent@2x.png">PNG (x2)</a>
+      </div>
+      <p>Les logos SVG contenant du texte requièrent la présence de la police Roboto sur le système.</p>
     </main>
     <b-footer />
   </div>
@@ -115,5 +128,10 @@ export default {
 
 .medias .links a:not(:last-child) {
   margin-right: 5px;
+}
+
+.medias .transparent {
+  background-image: url(/static/logos/tile.svg);
+  background-size: 20px 20px;
 }
 </style>
