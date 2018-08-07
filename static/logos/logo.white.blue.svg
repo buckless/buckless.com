@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>logo.white.blue</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="logo.white.blue" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="background" fill="#2E4053" x="0" y="0" width="360" height="360"></rect>
-        <g id="content" transform="translate(109.000000, 69.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <g id="logo">
-                <polygon id="rect2" opacity="0.75" points="0 70.711 70.71 0 141.422 70.71 70.71 141.421"></polygon>
-                <polygon id="rect1" opacity="0.5" points="0 150.711 70.71 80 141.421 150.71 70.711 221.421"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="360" height="360" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#2E4053" d="M0 0h360v360H0z"/><g fill="#FFF" fill-rule="nonzero"><path opacity=".75" d="M109 139.711L179.71 69l70.712 70.71-70.712 70.711z"/><path opacity=".5" d="M109 219.711L179.71 149l70.711 70.71-70.71 70.711z"/></g></g></svg>
