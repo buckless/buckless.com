@@ -61,7 +61,7 @@ header .container {
 }
 
 header img {
-  margin-right: 16px;
+  margin-right: 16px !important;
 }
 
 header a {
@@ -75,6 +75,7 @@ header a:visited {
 }
 
 header h1 {
+  color: #2c3e50;
   margin: 0;
   font-size: 1.6rem;
   font-weight: 300;
